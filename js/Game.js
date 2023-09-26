@@ -8,7 +8,7 @@ class Game {
     this.leader1 = createElement("h2");
     this.leader2 = createElement("h2");
     //var recebendo valor falso (movimentação do carro)
-    this.playerMoving = false;
+    
   }
 
   getState() {
@@ -288,18 +288,13 @@ class Game {
 
     // reduzindo o combustível do carro
     //se a gasolina for maior que 0, E, o carro estiver se mexendo
-     if(player.fuel > 0 && this.playerMoving){
-      player.fuel -= 0.3;
-     }
+    
 
 
 
     //verificar se a gasolina é menor ou igual a 0 
     //se for, gameState receberá 2 e você deve chamar o método gameOver. 
-    if(player.fuel<0){
-     gameState = 2;
-     this.gameOver();
-    }
+   
 
   }
 
